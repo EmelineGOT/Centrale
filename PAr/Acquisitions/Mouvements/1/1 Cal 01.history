@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Trial name="1 Cal 01" notes="">
+
+  <Parameters>
+    <Param header="0" name="Capture Date" value="2017-Feb-14 14:35:11"/>
+    <Param header="0" name="x2d" value="1 Cal 01.x2d"/>
+  </Parameters>
+
+</Trial>

@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Transformation digitale de l'image}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Conversion au format Bitmap}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Conversion en niveau de gris}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Transpos\351e de l'image}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{D\351finition d'une sous-zone}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Am\351lioration des zones de texte}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Multi-r\351solution}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Conversion en binaire}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Localisation des zones de texte potentielles}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Masque 1}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Masque 2}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Masque 3}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Application des masques morphologiques}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{S\351lection des zones de texte r\351elles}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{S\351paration des pixels de fond}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Filtrage des zones de texte}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Am\351liorations}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Masque 4}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Masque 5}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Exp\351riences}{}% 21
+\BOOKMARK [1][-]{section.8}{Questions}{}% 22
+\BOOKMARK [2][-]{subsection.8.1}{Comment devrions-nous \351valuer la pr\351cision de la technique propos\351e ? Quel crit\350re devrait \352tre utilis\351 ?}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.2}{Quels sont les d\351savantages potentiels \340 la technique propos\351e ? Justifiez votre r\351ponse.}{section.8}% 24

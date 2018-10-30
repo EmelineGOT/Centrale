@@ -1,0 +1,81 @@
+% Base de données pour les recettes.
+% Mars 2015
+
+%predicat disponible(ingrédient)
+disponible(eau).
+disponible(sucre).
+disponible(sel).
+disponible(vinaigre).
+disponible(huile).
+disponible(beurre).
+disponible(sachet_de_the).
+disponible(cafe).
+disponible(chocolat).
+disponible(lait).
+disponible(farine).
+disponible(oeufs).
+disponible(pate_a_crepes).
+disponible(pates_nouilles).
+disponible(laitue).
+disponible(pommes_dt).
+disponible(oignon).
+disponible(tomates).
+disponible(creme).
+disponible(fromage).	% toutes sortes. Pour une fondue, pour une tartiflette, raclette...
+disponible(lardons). 	% pour tester pates_a_la_carbonara
+
+
+%prédicat recette(mets, liste des ingrédients)
+recette(expresso, [cafe, eau, sucre ]).
+recette(gateau, [lait, farine, oeufs, sucre, beurre ]).
+recette(the, [sachet_de_the, eau, sucre ]).
+recette(crepes, [pate_a_crepes, sucre, beurre ]).
+recette(salade, [laitue, vinaigre, huile,  oignon]).
+recette(puree, [lait, pommes_dt, beurre,  sel ]).
+recette(frites, [pommes_dt, huile,  sel]).
+recette(pates_a_la_carbonara, [pates_nouilles,  oeufs,  lardons, sel, oignon, creme]).
+recette(carbona, [pates_nouilles,  oeufs,  lardons,  sel, oignon ]).
+recette(pitza, [farine,  oeufs,  lardons,  sel, oignon, tomates]).
+recette(tartiflette, [pommes_dt,  lardons,  sel, fromage]).
+
+
+%----------peut_preparer
+
+peut_preparer(R):- recette(R,L),peut_preparer(R,L).
+peut_preparer(R,[T|Q]):- disponible(T),peut_preparer(R,Q).
+peut_preparer(R,[]).
+
+
+%Corrigé
+%peut_preparer(R):- recette(R,L),tous_disponibles(L).
+%tous_disponibles([]).
+%tous_disponibles([T|Q]):- disponible(T),tous_disponibles(Q).
+
+%----------a_besoin_de
+
+membre([],_):-fail.
+membre([A],A).
+membre([T|R],A):- T#=A.
+membre([T|R],A):- membre(R,A).
+
+a_besoin_de(R,I):- recette(R,L),membre(L,I).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

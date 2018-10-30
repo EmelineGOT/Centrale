@@ -1,0 +1,11 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Recettes}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Relation \emph {peut\_preparer(R)}}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Relation \emph {a\_besoin\_de(R,I)}}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Introduction des quantit\'es}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Changement de la base de donn\'ees}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Relation \emph {peut\_preparer(X)}}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}Gestion des quantit\'es}{6}{section.3}
+\contentsline {section}{\numberline {4}Exercice Bonus - Livres}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Base de donn\'ees livres}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Requ\^etes}{7}{subsection.4.2}

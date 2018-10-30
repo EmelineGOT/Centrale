@@ -1,0 +1,20 @@
+ Fonction Monnaie_GloutonneEntrées: la somme M, les tableaux S (liste des différentes pièces) et D (disponibilité des pièces)Sorties : le vecteur T = Q(S,M) (le nombre de pièces nécessaires)	
+	M’= M 
+	Répéter		Chercher dans S l’indice i tel que Vi =< M’		Ti = M div Vi 
+		Si Ti <= Di :  %S’il y a assez de pièces disponibles					M’ = M mod Ti   %On les prend toutes
+		Sinon :
+			Ti = Di 	%On en prend un maximum et on continue
+			M’=M mod Di  
+	
+	Tant que M’ est différent de 0 et que Ti différent de 0: %en sortie d’algorithme
+		Ti=Ti-1  %Où i est l’indice trouvé précédemment
+		Tous les autres Tj = 0
+		On recommence avec M’=M mod Tj
+	
+	Si Ti=0:
+		Répéter l’algorithme en enlevant Ti des pièces disponibles
+
+	Si M’=0 :			Constituer T avec les Ti utilisés		Q(S,M) =  sum(i=1 à n,Ti)  %somme des valeurs du vecteur T
+
+	Sinon : 
+		Pas de solution !Fin Monnaie_Gloutonne            
